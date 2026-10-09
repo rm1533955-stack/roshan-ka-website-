@@ -1,117 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<img src="https://picsum.photos/500/600" width="500" height="600">
-    
-    
-    <title>Roshan's Portal - Sarkari Directory</title>
-    
-    <!-- Yahan se CSS start hoti hai -->
-    <style>
-        body {
-            background-color: #f4f6f9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            padding: 0;
-            color: #333;
-        }
-
-        h1 {
-            color: #0d47a1;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        /* Container box for links */
-        ul {
-            list-style-type: none; /* Bullet points hata diye */
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto; /* Screen ke center me lane ke liye */
-        }
-
-        /* Har ek service card ki styling */
-        li {
-            background-color: #fff0f0;
-            margin-bottom: 15px;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Direct Clickable Link ki styling */
-        a {
-            color: #fff0f0;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #fff0f0;
-        }
-
-        p {
-            margin: 5px 0 0 0;
-            font-size: 14px;
-            color: #666;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 13px;
-            color: #888;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Gamer Profile</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <h1>Roshan's Portal</h1>
-    <div class="subtitle"><b>Sarkari Kam Ki Zaruri Websites</b></div>
+  <!-- 1. Header Section -->
+  <header>
+    <h1>roshan eSports</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#join">Join Squad</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <ul>
-        <li>
-            <a href="https://uidai.gov.in/" target="_blank">Aadhaar Card Portal (UIDAI)</a>
-            <p>Naya Aadhaar Card banana, Aadhaar update karna, aur status check karna.</p>
-        </li>
-        <li>
-            <a href="https://voters.eci.gov.in/" target="_blank">Voter ID Portal (Election Commission)</a>
-            <p>Naya Voter ID Card apply karna, Voter ID download karna, aur Voter List dekhna.</p>
-        </li>
-        <li>
-            <a href="https://www.incometax.gov.in/" target="_blank">PAN Card / Income Tax Portal</a>
-            <p>Naya PAN Card banana, PAN-Aadhaar Link karna, aur ITR bharna.</p>
-        </li>
-        <li>
-            <a href="https://parivahan.gov.in/" target="_blank">Parivahan Sewa Portal</a>
-            <p>Driving License apply karna, Learning License test, aur RC ki jankari.</p>
-        </li>
-        <li>
-            <a href="https://mypassport.gov.in/" target="_blank">Passport Seva Portal</a>
-            <p>Naya Passport apply karna, appointment book karna, aur status track karna.</p>
-        </li>
-        <li>
-            <a href="https://pmkisan.gov.in/" target="_blank">PM Kisan Samman Nidhi Portal</a>
-            <p>Kisan kist ka status check karna, e-KYC karna, aur naya registration.</p>
-        </li>
-        <li>
-            <a href="https://sarkariresult.com/" target="_blank">Sarkari Result / Sarkari Naukri</a>
-            <p>Nayi Sarkari Jobs, Admit Cards, Exam Dates, aur Results dekhna.</p>
-        </li>
-    </ul>
+  <hr>
 
-    <footer>
-        <i>Note: Kisi bhi link par click karte hi website naye tab mein khul jayegi.</i>
-    </footer>
+  <!-- 2. Profile / Hero Section -->
+  <section id="about">
+    <img src="https://via.placeholder.com/150" alt="Gamer Profile Photo">
+    <h2>Roshan - Pro Gamer</h2>
+    <p>
+      I play <b>BGMI</b> and <i>Free Fire</i> daily. My focus is on <mark>eSports Tournaments</mark> and live streams.
+    </p>
+    <a href="https://t.me/eoshaxmod" target="_blank">Join Telegram Channel</a>
+  </section>
+
+  <hr>
+
+  <!-- 3. Stats & Games Section -->
+  <section id="stats">
+    <h3>Top Games Played</h3>
+    <ol>
+      <li>BGMI</li>
+      <li>Free Fire MAX</li>
+      <li>GTA V</li>
+    </ol>
+
+    <h3>Player Stats</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>Rank</th>
+          <th>Hours Played</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BGMI</td>
+          <td>Conqueror</td>
+          <td>1200+</td>
+        </tr>
+        <tr>
+          <td>Free Fire</td>
+          <td>Grandmaster</td>
+          <td>800+</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- 4. Join Squad Form Section -->
+  <section id="join">
+    <h3>Join My Squad</h3>
+    <form>
+      <label for="name">Gamer Tag / Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+      <label for="platform">Platform:</label><br>
+      <select id="platform">
+        <option value="mobile">Mobile</option>
+        <option value="pc">PC</option>
+        <option value="console">Console</option>
+      </select><br><br>
+
+      <label>Preferred Role:</label><br>
+      <input type="radio" id="rusher" name="role" value="rusher">
+      <label for="rusher">Rusher</label>
+      <input type="radio" id="sniper" name="role" value="sniper">
+      <label for="sniper">Sniper</label><br><br>
+
+      <input type="checkbox" id="rules">
+      <label for="rules">I agree to follow all squad rules</label><br><br>
+
+      <label for="msg">Message:</label><br>
+      <textarea id="msg" rows="4" cols="30" placeholder="Tell us about your game skills..."></textarea><br><br>
+
+      <button type="submit">Send Application</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- 5. Footer Section -->
+  <footer>
+    <p>&copy; 2026 roshan eSports. All rights reserved.</p>
+    <span>Contact: roshan@esports.com</span>
+  </footer>
+    <!-- JS File Link -->
+  <script src="index.js"></script>
+</body>
+
 
 </body>
+
 </html>

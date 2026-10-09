@@ -1,0 +1,237 @@
+/* 1. Body Styling */
+/* 1. Global Reset & Dark Gaming Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #22d3ee, transparent);
+    margin: 30px 0;
+}
+
+/* 2. Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #1e293b;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+header h1 {
+    color: #22d3ee;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* 3. Sections Styling */
+section {
+    background: #111827;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* About / Hero Section */
+#about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #22d3ee;
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+    margin-bottom: 15px;
+}
+
+#about h2 {
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+mark {
+    background-color: #a855f7;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+#about a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #22d3ee;
+    color: #0b0f19;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#about a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.6);
+}
+
+/* 4. Stats & Table Section */
+#stats h3 {
+    color: #22d3ee;
+    margin: 15px 0 10px 0;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background-color: #a855f7;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #0f172a;
+}
+
+/* 5. Join Squad Form Section */
+#join h3 {
+    color: #a855f7;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.3);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #a855f7;
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background: #a855f7;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #9333ea;
+    transform: scale(1.03);
+}
+
+/* 6. Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: #22d3ee;
+}
+/* Custom Floating Toast Notification */
+.custom-toast {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out forwards;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
