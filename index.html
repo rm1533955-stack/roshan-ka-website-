@@ -2,118 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gamer Profile</title>
-    <!-- CSS Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan's Calculator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- 1. Header Section -->
-  <header>
-    <h1>roshan eSports</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#stats">Stats</a></li>
-        <li><a href="#join">Join Squad</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="calculator">
+        <!-- App Title -->
+        <h1 class="calc-title">Roshan's Calculator</h1>
 
-  <hr>
+        <!-- Display Screen -->
+        <input type="text" id="display" readonly placeholder="0">
 
-  <!-- 2. Profile / Hero Section -->
-  <section id="about">
-    <img src="https://via.placeholder.com/150" alt="Gamer Profile Photo">
-    <h2>Roshan - Pro Gamer</h2>
-    <p>
-      I play <b>BGMI</b> and <i>Free Fire</i> daily. My focus is on <mark>eSports Tournaments</mark> and live streams.
-    </p>
-    <a href="https://t.me/eoshaxmod" target="_blank">Join Telegram Channel</a>
-  </section>
+        <!-- Calculator Buttons Grid -->
+        <div class="buttons">
+            <button class="btn-action" onclick="clearDisplay()">C</button>
+            <button class="btn-action" onclick="deleteChar()">DEL</button>
+            <button class="btn-op" onclick="appendValue('/')">/</button>
+            <button class="btn-op" onclick="appendValue('*')">*</button>
 
-  <hr>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button class="btn-op" onclick="appendValue('-')">-</button>
 
-  <!-- 3. Stats & Games Section -->
-  <section id="stats">
-    <h3>Top Games Played</h3>
-    <ol>
-      <li>BGMI</li>
-      <li>Free Fire MAX</li>
-      <li>GTA V</li>
-    </ol>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button class="btn-op" onclick="appendValue('+')">+</button>
 
-    <h3>Player Stats</h3>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Game</th>
-          <th>Rank</th>
-          <th>Hours Played</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>BGMI</td>
-          <td>Conqueror</td>
-          <td>1200+</td>
-        </tr>
-        <tr>
-          <td>Free Fire</td>
-          <td>Grandmaster</td>
-          <td>800+</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button class="btn-equal" onclick="calculate()">=</button>
 
-  <hr>
+            <button class="btn-zero" onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
+    </div>
 
-  <!-- 4. Join Squad Form Section -->
-  <section id="join">
-    <h3>Join My Squad</h3>
-    <form>
-      <label for="name">Gamer Tag / Name:</label><br>
-      <input type="text" id="name" placeholder="Enter your name"><br><br>
-
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" placeholder="Enter your email"><br><br>
-
-      <label for="platform">Platform:</label><br>
-      <select id="platform">
-        <option value="mobile">Mobile</option>
-        <option value="pc">PC</option>
-        <option value="console">Console</option>
-      </select><br><br>
-
-      <label>Preferred Role:</label><br>
-      <input type="radio" id="rusher" name="role" value="rusher">
-      <label for="rusher">Rusher</label>
-      <input type="radio" id="sniper" name="role" value="sniper">
-      <label for="sniper">Sniper</label><br><br>
-
-      <input type="checkbox" id="rules">
-      <label for="rules">I agree to follow all squad rules</label><br><br>
-
-      <label for="msg">Message:</label><br>
-      <textarea id="msg" rows="4" cols="30" placeholder="Tell us about your game skills..."></textarea><br><br>
-
-      <button type="submit">Send Application</button>
-    </form>
-  </section>
-
-  <hr>
-
-  <!-- 5. Footer Section -->
-  <footer>
-    <p>&copy; 2026 roshan eSports. All rights reserved.</p>
-    <span>Contact: roshan@esports.com</span>
-  </footer>
-    <!-- JS File Link -->
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
-
-
-</body>
-
 </html>
